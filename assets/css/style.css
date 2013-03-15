@@ -1,0 +1,1239 @@
+@charset "utf-8";
+
+/*  Grup Clearing pels espais en blanc            */
+
+#hd:after,
+#bd:after,
+#ft:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+
+
+/* CSS Document */
+/*
+body {
+	//background:#f1f1f1;
+	font-family: 'Open Sans', sans-serif !important; font-size:100% !important; padding-top:20px;}
+*/
+.hidden {display: none;}
+
+#wrapper { 
+	// margin:0 auto;
+	text-align:left;
+	// width:958px;
+	background:#ffffff;
+}
+
+
+.hd .cantonadas-top {background-color: #1DBBE9;}
+.descripcio h1 a {color: black;}
+.descripcio li a,
+.cantonadas-bottom p {padding-right: 8px;}
+//.descripcio li a, 
+//.cantonadas-bottom p a {color: #069CC8;}
+.avatar img {
+    border: 3px solid #828282;
+}
+/*
+a,
+a:visited,
+a:active,
+a:link {color:#0000FF; text-decoration:none; *font-weight:600;}
+a:hover {text-decoration:underline}
+*/
+// a.btn {color : white !important;}
+
+h3 a {color: #2D2D2D !important;}
+
+/*  estructura página                		               */
+
+#hd,
+#bd, 
+#ft {margin:0 auto; width:950px; padding : 8px;}
+
+#ft {background:#2d2d2d; float:left;}
+
+/*** Cantonades redondejades ****/
+
+/* totes */
+.cantonadas {-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+
+/* top */
+.cantonadas-top { -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px;}
+
+/* left */
+.cantonadas-left { -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px;}
+
+/* bottom */
+.cantonadas-bottom { -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px;margin-bottom : 20px;}
+
+
+#hd h3 {width:270px; height:70px; position:absolute; margin:15px 0 24px 15px; background-color:#ffffff;}
+ .nav-lenguaje {margin:5px 15px 10px 0;float:right;font-size:12px; width:100%}
+.nav-corporative {float:right; margin:0 15px 0 0; font-size:14px;}
+
+.nav-lenguaje li,
+.nav-corporative li{float:right; padding:0 10px 0 0; border-right:1px solid #990011; margin:10px 0 0 10px; font-weight:600;}
+.nav-corporative a {color: #990011;}
+.nav-lenguaje li.last,
+.nav-corporative li.last {padding-right:0; border-right:none;}
+ */
+.nav-sections { width:920px; margin:0 15px; background:url(../img/bg-nav-sections.png) top left repeat-x; float:left;}
+.nav-sections ul{float:left;}
+.nav-sections li{float:left;background:url(../img/filete-nav-section.png) top right no-repeat; }
+.nav-sections li a{color:#ffffff !important; padding:8px 22px 7px 20px;line-height:39px;}
+.nav-sections li.active {background:url(../img/bg-nav-sections-active.png) top left repeat-x;}
+
+/* sub menus */
+
+
+.nav-user,
+.nav-cuenta,
+.nav-salir {float:right; margin:7px 0 0 0; background-color:#069cc8; padding:3px 0 3px 10px}
+.nav-salir {padding:3px 10px}
+
+.nav-user a,
+.nav-cuenta a,
+.nav-salir a{color:#fff !important;}
+
+.nav-user span,
+.nav-cuenta span{background:#069cc8 url(../img/ico-mes-menu.gif) right 4px no-repeat; padding-right:28px;}
+
+
+.no-registrado .nav-user span,
+.no-registrado .nav-cuenta span {background-image:none; padding-right:0; margin-right:10px;}
+.no-registrado .nav-user {margin-right:10px;}
+
+
+.menus-top .submenu{display:none; margin:3px 0 0 0; z-index:1000 !important; position:absolute;float:left; background-color:#f1f1f1;border:1px solid #069cc8; border-top:none;}
+.menus-top .submenu li{font-size:13px; line-height:18px; padding:0 10px 5px;}
+.menus-top .submenu li.active{ font-weight:bold;}
+
+/* menu empresa i usuario */
+
+.menus-usuario-empresa {float:right; border-top:1px solid #2d2d2d; margin:0 15px 45px 0; font-size:14px;}
+.menus-usuario-empresa ul.submenu {margin-left:-10px; padding-bottom:7px;padding-top:7px;}
+.menus-usuario-empresa ul.submenu li a{color:#2d2d2d !important}
+
+/* indicador de mensaje */
+
+.menus-usuario-empresa em{ background:url(../img/bg-num-mensajes-l.png) top left no-repeat; font-weight:bold; height:16px; float:left; padding-left:5px; margin:-7px 7px 0 0;}
+.menus-usuario-empresa em a{ background:url(../img/bg-num-mensajes-r.png)  top right no-repeat; padding:0 5px 0 0; float:right; font-style:normal; font-size:11px; line-height:16px;}
+
+.menus-usuario-empresa em a:hover{ text-decoration:none;}
+.menus-usuario-empresa ul.submenu em { margin:0 0 0 7px; float:right;}
+.menus-usuario-empresa ul.submenu em a{ color:#fff !important}
+
+/* nav sections */
+
+.nav-sections { width:920px; margin:0 15px; background:url(../img/bg-nav-sections.png) top left repeat-x; float:left;}
+.nav-sections ul{float:left;}
+.nav-sections li{float:left;background:url(../img/filete-nav-section.png) top right no-repeat; }
+.nav-sections li a{color:#ffffff !important; padding:8px 22px 7px 20px;line-height:39px;}
+.nav-sections li.active {background:url(../img/bg-nav-sections-active.png) top left repeat-x;}
+
+
+.nav-sections form {float:right; margin:9px 10px 0px 3px; width:320px; background:url(../img/bg-search-input.png) top right no-repeat;}
+.nav-sections form input#search-txt{
+	font-size:14px;
+	line-height:20px;
+	*line-height:15px;
+	color:#909090;
+	width:286px;
+	border:none;
+	margin:0 0 5px 3px;
+	background:transparent;
+	}
+	
+.nav-sections form input#search-submit {
+    background: url(../img/bt-search.png) top right no-repeat;
+    cursor: pointer;
+    width: 20px;
+	border:none;
+}
+
+
+
+/*menu filtros subseccion */
+
+.nav-filtros {float:left;  width:920px; margin:0 15px; background:url(../img/bg-nav-filtros.png) bottom left repeat-x; height:40px; }
+
+.mis-conocimientos .nav-filtros {width:630px;}
+
+.nav-filtros ul{float:left; margin:14px 0 0 15px;}
+.nav-filtros li{float:left; margin-right:15px; padding-right:15px; border-right:2px solid #fff; font-size:14px;}
+.nav-filtros li.active a{color:#fff;}
+
+.nav-filtros form {float:right; width:645px; color:#FFFFFF; font-size:14px; margin: 12px 13px 0; text-align: right;}
+.nav-filtros form select{margin:0 20px 0 10px;}
+.nav-filtros form .poblaciones{border: 1px solid #333333;color: #666666;font-size: 13px;height: 17px;margin-top: 0;padding: 0 3px; width: 160px;}
+
+
+.num-ofertas {width:920px; float:left;margin:-7px 0 5px 15px; }
+.filtro-categoria { background:#f1f1f1;}
+
+.num-ofertas p{font-size:15px; color:#7b7e81;width:917px; line-height:21px; margin:3px 0 0 3px; font-weight:600}
+.num-ofertas p b {color:#333333; font-weight:600;}
+.num-ofertas span.close{
+    background: url("../img/bt-close-filtre.png") center no-repeat;
+    cursor: pointer;
+    height: 20px;
+    margin: 3px 2px;
+    width: 25px;
+	z-index:1000;
+}
+
+.num-ofertas em { padding:0 3px 0 9px; color:#343434; background: url("../img/ico-directorio.png") left center no-repeat;}
+.num-ofertas em a{ color:#343434 !important}
+
+/* slide home */
+
+.slide { 
+    width:938px; 
+	height:286px; 
+	background:url(../img/bg-slide.png) top left no-repeat; 
+	//margin:10px 6px 0 5px; 
+	float:left;}
+	
+/*
+.slide .somos{ width:305px; padding:25px 0 25px 25px; font-size:19px; line-height:25px; color:#2d2d2d; font-weight:400; float:left;}
+.slide .somos em{  font-style:normal; font-weight:800; color:#069cc8;}
+.slide  h2{color:#7b7e81; font-weight:400; margin-bottom:5px;font-size:19px; }
+*/
+.slide .scrollable {position:relative;overflow:hidden;width: 908px;height:231px;margin:20px 19px 0 0; float:right;}
+.slide .scrollable .items {	width:20000em; position:absolute;clear:both;}
+.slide .items div {float:left;width:918px;height:231px;}
+.slide .items div .text {float : left; width : 470px;}
+.slide .items div .text strong {font-weight : bold;}
+.slide .items div.sentencia{
+	float:left;
+	width:445px;
+	background:#000;
+	color:#fff;
+	height:43px;
+	position:relative;
+	top:191px;
+	left:0;
+	filter:alpha(opacity=70);
+  	opacity:0.7;
+	-moz-opacity: 0.7;
+}
+
+.slide .items p{
+	font-size:22px;
+	font-weight:200;
+	margin:8px 0 15px 15px;
+	letter-spacing:0.025em;
+	filter:alpha(opacity=100);
+  	opacity:1;
+	-moz-opacity:1;
+}
+
+.slide .scrollable img { float:left; margin:-43px 0 0 0; width: 445px; height:231px;}
+.scrollable .active { position:relative; cursor:default; z-index:1000;}
+
+/* navegació slide */
+
+.navi { top:205px; left:455px; width:200px; height:20px; z-index:1000; position:relative}
+.navi a {
+	width:12px;
+	height:12px;
+	float:left;
+	margin:3px;
+	background:url("../img/navigator.png") 0 0 no-repeat;
+	display:block;
+	font-size:1px;
+	z-index:1000;
+	border:none;
+	position:relative;
+}
+
+.navi a:hover {background-position:0 -12px;}
+.navi a.active {background-position:0 -24px;}
+
+/*	estructura bàsica módulos					  			 */
+
+.modulo {float:left; margin:0 13px 44px 13px;*width:96.5%}
+.modulo .hd {position:relative; width:100%;}
+.modulo .hd .more {position:absolute; right:5px; top:9px; zoom:1; *letter-spacing:-0.1em;}
+.modulo .bd { width:100%;  float:left;} 
+.modulo .ft {float:left; width:100%;}
+.modulo .ft .more {float:right; display:inline; font-size:12px; margin:0 15px 10px 0;}
+
+/* grid al 100% de ancho */
+.grid-100 {float:left; width:100%;}
+.grid-100 .modulo {width:97%; margin:15px 20px 0 15px;}
+/* modulo al 50% de ancho */
+
+.grid-50 .modulo {float:left; width:447px; margin:15px 20px 44px 15px;}
+.grid-50 .modulo hr{ width:94.5%; *width:100%; margin:0 3% 5px 3%; clear:both;}
+
+/* modulo al 75% de ancho */
+
+.grid-75 {float:left; width:645px;}
+.grid-25 {float:left; width:304px;}
+
+.grid-75 .modulo {width:630px; margin:15px 15px 0 15px;}
+.detall_oferta .grid-25 .modulo,
+.detall_demanda .grid-25 .modulo,
+.detall_projecte .grid-25 .modulo {float:right; width:239px; margin:15px 15px 25px 0;}
+
+/* modulos producto */
+
+.producto .bd{background-color:#f1f1f1 !important;}
+.producto .hd {
+	height:30px; background:url(../img/prova-hd.png) top left repeat-x #1dbbe9;}
+.producto .hd h4 {color:#FFFFFF; margin-left:15px; font-size:19px; line-height:30px;font-style:italic; font-weight : normal;}
+.producto .hd .more a {color:#444; font-weight : bold;}
+.producto .ft,
+.peticion .ft {background: url(../img/bg-modulo-footer.png) bottom left repeat-x;}
+.producto .ft hr { width:96.5%; *width:100%; margin:0 1.5% 5px 1.7%; height:1px; background-color:#939393; border:none;}
+.ofertas .ft-section hr { width:97%; *width:100%; margin:30px 1.5% 5px 1.7%; height:1px; background-color:#939393; border:none;}
+
+/* Seccion */
+
+.section .hd-section {float:left;width:100%;} 
+.section .bd-section {float:left;width:100%;} 
+.section .ft-section {float:left;width:100%}
+
+/*	Productes	 */
+
+.producto .item {margin:0 13px;}
+.item {margin:0; border-bottom:1px solid #c0c0c0; font-size:14px; line-height:19px; min-height:74px;}
+
+
+.item h1{font-weight:600; margin-bottom:4px; font-size:14px;line-height:19px;}
+.item .user{float:left; margin:10px 12px 0 0}
+
+.item .descripcio {display:table; height:1%; margin:10px 0 10px 0;}
+.item .descripcio span{color:#828282; margin-left:10px;}
+.item ul {float:left; width:100%;}
+.item li {float:left; padding:0 10px 0 0; font-size:14px;}
+.item li a{font-weight:400;*font-weight:600;}
+
+/* projectes */
+
+.projectes {width:276px; float:left; margin:15px 15px 20px 15px !important; *margin:15px 14px 20px 14px; border:none;}
+.projectes .user {display:block; margin:0 0 15px 0;}
+.projectes .user img{border:1px solid #828282}
+.projectes .descripcio {display:block; margin-top:10px;float:left}
+.projectes ul {margin-bottom:10px;}
+.projectes .descripcio p{ font-size:13px; line-height:17px; float:left;clear:both}
+
+#ft .modulo{background:none;}
+
+/* detall projecte */
+
+.desc-projecte {border-top:1px solid #D5D5D5; float:left;}
+.desc-projecte h3,
+.demandas h3,
+.necesidades h3 {color:#333; font-size:15px; font-weight:bold; line-height:20px; margin:10px 0 14px 0;}
+.desc-projecte p {color:#7b7e81; font-size:14px; line-height:21px;}
+.desc-projecte p img{ float:left; margin:6px 18px 10px 0;}
+
+/* Pagina detall d'oferta coneixement */
+
+.detall-coneixement h4 {text-transform:uppercase; color:#828282; font-size:12px;margin:0 0 10px 0;}
+.detall-coneixement .item {margin:0;}
+.detall-coneixement .descripcio h1 {font-size:22px; line-height:26px; font-weight:bold; width:75%;}
+.detall-coneixement .descripcio p {color:#767676; font-size:15px; line-height:21px; width:80%;}
+.detall-coneixement .tipus-coneixement {font-weight:bold; color:#2d2d2d !important; margin-bottom:10px;}
+
+.descripcio dl {width:56%; float:left;font-size:15px; margin-bottom : 10px;}
+.descripcio dt {margin-top:3px; font-weight:15px; line-height:25px; float:left;}
+.descripcio dd {float:left; padding:0; margin:5px 0 0 5px;}
+.geo {background:url(../img/ico-geoloc.png) 5px 0 no-repeat; text-indent:35px; height:25px;}
+.tags {background:url(../img/ico-tags.png) 0 3px no-repeat; text-indent:35px; float:left;}
+.web {background:url(../img/icon-web-bw.png) 5px 0 no-repeat; text-indent : 35px; float : left;}
+.topics {background:url(../img/icon-topics-bw.png) 5px 0 no-repeat; text-indent : 35px; float : left;}
+.video {background:url(../img/icon-video-bw.png) 5px 0 no-repeat; text-indent : 35px; float : left;}
+
+.topics-small {background:url(../img/icon-topics-small-bw.png) 5px 0 no-repeat; text-indent : 25px; float : left; line-height : 16px;}
+/* icos compartir y favoritos */
+.compartir {float:right;width:42%; margin:29px 0;}
+.compartir p.favoritos{background:url(../img/ico-fav.png) 0 2px no-repeat; text-indent:25px; float:left; width:auto; font-size:12px}
+.compartir p.favoritos:hover{background:url(../img/ico-fav-on.png) 0 2px no-repeat; text-indent:25px; float:left; width:auto; font-size:12px}
+.compartir p.favoritos.active{background:url(../img/ico-fav-on.png) 0 2px no-repeat; text-indent:25px; float:left; width:auto; font-size:12px}
+.compartir li{float:right; padding:0 0 0 10px; margin-top:10px;}
+
+.detall-coneixement .bd {border-bottom:1px solid #d5d5d5; padding-bottom:20px;}
+.detall_demanda .detall-coneixement .bd,
+.detall_projecte .detall-coneixement .bd {border:none;}
+
+.detall_oferta hr,
+.detall_demanda hr,
+.detall_projecte hr,
+.faq hr,
+.favoritos hr,
+.ofertas hr,
+.avisos hr,
+.demandas hr,
+.proyectos hr,
+.mis-conocimientos hr,
+.registro hr,
+.usuari hr,
+.editar-usuari hr,
+.servicios hr{border:none; height:3px; width:96.9%; *width:100; background: #4a4a4a; margin:10px 15px 20px 15px; clear:both; }
+.detall_oferta .producto h4,
+.detall_demanda .producto h4 {font-size:15px !important;}
+
+.valoracion {color:#828282; font-size:15px; line-height:20px; margin-bottom:30px;}
+.valoracion p{margin-top:10px}
+.valoracion dl { width:40%; float:left; margin:18px 30px 0 0}
+.valoracion .total-ayudas {font-weight:bold; color:#2d2d2d; margin-top:5px;}
+
+.valoracion .voto-positivo {color:#007f34 !important;font-weight:bold; margin-top:5px;background:url(../img/ico-vot.png) 0 0 no-repeat; padding-left:21px;}
+.valoracion .voto-negativo {color:#ff0000 !important;font-weight:bold; margin-top:5px;background:url(../img/ico-vot.png) 0 -23px no-repeat; padding-left:21px;}
+.valoracion dd {float:left; margin-right:20px;}
+.voto-positivo a{color:#007f34 !important; }
+.voto-negativo a{color:#ff0000 !important; }
+
+/* comentaris */
+
+.comentaris .hd{ border-top:1px solid #d5d5d5;border-bottom:1px solid #d5d5d5; margin-bottom:15px;}
+.comentaris .bd {margin-bottom:30px;}
+.comentaris h4{ background:url(../img/ico-coments.png) 0 0 no-repeat; text-indent:25px; margin:8px 0 0 0; height:25px; font-size:15px; color:#2d2d2d}
+.comentaris h2 { font-size:13px; font-weight:bold;}
+.comentaris p { font-size:13px; line-height:17px; width:75%;}
+.comentaris .item { padding-bottom:20px;}
+
+
+.comentaris .resposta {margin-left:70px; border-top:none;  padding-left:10px;}
+.comentaris .resposta .avatar,
+.comentaris .resposta .descripcio {margin-top:0; margin-bottom:0;}
+.comentaris .resposta .avatar {border-left:1px solid #d5d5d5; padding-left:15px;}
+
+/* entrar comentaris */
+
+.comentaris .ft{border:1px solid #d5d5d5; margin: 0 0 30px;}
+.comentaris textarea {border:1px solid #d5d5d5; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:19px; color:#666666; padding:5px; width:553px; height:150px; margin-bottom:12px}
+.comentaris form {margin:10px 39px 35px 20px;}
+.comentaris button {color:#282828;font-size:15px; padding:3px 25px; border:1px solid #a2a5a7; float:right; margin:4px 5px 30px 13px; background:url(../img/bg-button-off.png) 0 0 repeat-x;}
+.comentaris button:hover {color:#000; background:url(../img/bg-button-on.png) 0 0 repeat-x; cursor:pointer;}
+.comentaris .ft p {margin: 10px 0 0 20px; font-size:15px; font-weight:500;}
+
+.comentaris input#id_name,
+.comentaris input#id_email,
+.comentaris input#id_url,
+.comentaris input#id_honeypot {display:none}
+
+.replica textarea {border:1px solid #d5d5d5; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:19px; color:#666666; padding:5px; width:371px; height:25px;}
+.replica form {margin:20px 0 35px 15px;}
+.replica buttom {margin:5px 0 30px 0 !important;}
+
+/* afegit dani grande */
+
+#loginForm form{
+    float: left;
+    font-size: 15px;
+    line-height: 21px;
+    width: 424px;
+}
+#loginForm form,
+#loginForm label,
+#loginForm input { width:424px; float:left; font-size:15px; line-height:21px;}
+#loginForm button {background:#16b9e8; float:right; margin-top:10px; font-size:19px; line-height:30px; color:#FFFFFF; font-weight:bold; padding:15px 70px; cursor:pointer; border:none;}
+#loginForm button:hover {background:#169be8; text-decoration:underline;}
+.registration_text{width:100%;float:left;clear:both;height:30px}
+#loginForm .formulari{width:460px;float:left}
+
+
+/* modul botó peticio */
+
+.peticion {background:#f1f1f1;text-align:center;}
+.peticion .hd{background:#d3d3d3; padding:15px 0 20px 0;}
+.peticion .bd{background: url(../img/bg-pedir.png) top center no-repeat; padding-top:32px;}
+.detall_demanda .peticion .bd,
+.detall_projecte .peticion .bd,
+.mis-conocimientos .peticion .bd {background-image:none; padding-top:32px;}
+.peticion dl {font-size:15px; line-height:18px;}
+.peticion dd {color:#c3004a}
+
+.bt-pedir {
+	background:#c3004a url(../img/bg-bt-pedir-off.png) center 0 repeat-x; 
+	margin:0 auto 10px;
+	border:1px solid #970949;
+	width:200px;
+	font-weight:bold;
+	font-size:19px;
+	height:51px;
+	text-align:center;
+	}
+
+.bt-pedir:hover {background:#c3004a url(../img/bg-bt-pedir.png) center 0 repeat-x;}
+.bt-pedir a{color:#ffffff !important; padding:15px 0 20px 0; display:block;}
+
+
+
+#over .bt-pedir {width:160px; font-size:15px !important; height:31px; margin-bottom:0; }
+#over .bt-pedir a{ margin:5px auto;padding:0;}
+
+/* ajustes bt listado */
+
+.bd-section .peticion {background:url(../img/bg-peticion-list.png) top center no-repeat; float:right; width:230px; margin-right:18px;}
+.demandas .bd-section .peticion {background:#d3d3d3 !important}
+.bd-section .bt-pedir {
+	background:#c3004a url(../img/bg-bt-pedir-off.png) center 0 repeat-x; 
+	margin:0 auto 10px;
+	border:1px solid #970949;
+	width:200px;
+	font-weight:600;
+	font-size:16px;
+	height:33px;
+	float:left;
+	letter-spacing:0.030em;
+	}
+	
+.bd-section .peticion dl,
+.bd-section .peticion dt,
+.bd-section .peticion dd {float:left;}	
+
+.bd-section .peticion dl { height:20px; margin:8px 25px 9px 23px}
+.bd-section .peticion .bt-pedir {margin:15px;}	
+.bd-section .peticion .bt-pedir a{color:#ffffff !important; padding:7px 0 10px 0; display:block;}
+	
+
+/* módul Quien ofrece la ayuda */
+.quien {background-color:#f1f1f1 !important;}
+.quien .hd { font-size:15px; margin:10px 0 0 15px;}
+.quien h2 { font-size:14px; font-weight:bold;}
+.quien li { font-size:12px;}
+.quien li a{color:#282828 !important}
+.quien .avatar {margin:15px 10px 10px 15px}
+.quien .ft {background: url(../img/bg-modulo-footer.png) bottom left repeat-x;}
+
+.top-rated { float:left; font-size:12px !important;background: url(../img/ico-top-rated.png) 0 center no-repeat; text-indent:20px;}
+.enviar-mensaje { float:left; font-size:12px !important;background: url(../img/ico-send-mensaje.png) 0 center no-repeat; text-indent:20px;}
+/*.enviar-mensaje {font-size:12px !important; margin:0 10px 10px 15px; background: url(../img/ico-send-mensaje.png) 0 center no-repeat; text-indent:20px;}*/
+
+/* skin genérica */
+
+/*links */
+/*
+a,
+a:visited,
+a:active,
+a:link {color:#069cc8; text-decoration:none}
+.skin-generic a:hover {text-decoration:underline}
+*/
+/* menus header */
+
+/* .nav-lenguaje a{color:#8e8e8e}
+.nav-lenguaje .active a{color:#069cc8}
+.nav-corporative li.bg-on {background-color:#069cc8; padding:3px 5px; border-right:none; margin-top:7px;}
+.nav-corporative li.bg-on a{color:#FFFFFF} 
+ */
+.nav-sections {background-color:#666666;} /* per canviar els colors del background dels menu*/
+.nav-sections li.active {background-color:#1dbbe9;} /* per canviar els colors del background de la secció activa */
+
+/* apertura */
+.skin-generic .apertura h2 {color:#069cc8}
+
+/* color capcelera móduls */
+.skin-generic .producto h4 {color:#FFFFFF; margin-left:15px; font-size:19px; line-height:30px;font-style:italic}
+.skin-generic .producto .hd {background-color:#1dbbe9; } /* per canviar els colors del background dels moduls*/
+
+/* descripcio coneixements */
+.skin-generic .hd .more {font-size:14px; margin-right:10px; font-weight:600;}
+.skin-generic .hd .more a {color:#444444}
+.skin-generic .item h1 a{color:black}
+
+/* avatar border */
+.skin-generic .avatar img{border:3px solid #828282}	
+
+
+/* FAQ */
+
+.apertura{ width:475px; font-size:19px; line-height:25px; color:#2d2d2d; font-weight:400; float:left; margin:0 75px 0px 15px;}
+.apertura h1 {font-size:18px; color:#7b7e81;}
+.apertura h2 {font-size:18px; font-weight:bold; margin:15px 0;}
+.apertura p {font-size:15px; line-height:21px; color:#2d2d2d; margin-top:24px;}
+.apertura_foto {float:right; width:370px; margin:0 15px 20px 0;}
+.apertura_foto .mascara { position:absolute; z-index:50; width:370px; height:180px; background: url(../img/mascara-faq.png) top left no-repeat;}
+.apertura_foto img {position:relative; top:0; left:0;}
+
+.apertura ul {float:left;font-size:15px; line-height:21px; margin-right:8px; }
+.apertura li {float:left;font-size:15px; line-height:21px; margin-right:8px; }
+
+.nav-faq { margin-bottom:100px;width:95%}
+.nav-faq dl{ margin:0 20px 20px 20px; font-size:15px; line-height:21px;}
+.nav-faq dt {font-weight:bold; margin:24px 0;}
+
+.txt-faq { padding-bottom:100px;}
+.txt-faq h2 {font-weight:bold; font-style:italic; font-size:17px; margin:0 0 24px 14px;}
+.txt-faq h3 {font-weight:bold; font-size:17px; margin-bottom:20px; margin:15px 14px}
+.txt-faq p{color:#7b7e81; font-size:15px; line-height:21px; margin:0 0 20px 14px; width:85%;}
+
+/* Ofertas */
+.ofertas .apertura h2 {font-size:22px; color:#2d2d2d; font-weight:bold;}
+.ofertas .item { display:block;padding-top:13px;border:none; float:left; min-height:127px; width:100%;}
+.ofertas .item .user {margin: 5px 17px 0 13px;}
+.ofertas .item .descripcio {display:table; height:1%; margin:0 0 20px 0; float:left; width:500px;}
+.ofertas .item .descripcio h1 {font-size:17px; line-height:22px; font-weight:bold; color:#2d2d2d;}
+.ofertas .item .descripcio p {font-size:14px; line-height:21px; color:#767676; margin-bottom:10px;letter-spacing: 0.01em;}
+
+/* avisos */
+
+.avisos .apertura h2 {font-size:22px; color:#2d2d2d; font-weight:bold;}
+
+
+/* demandas */
+.demandas .apertura h2 {font-size:22px; color:#2d2d2d; font-weight:bold;}
+.demandas .item { display:block;padding-top:13px;border:none; float:left; min-height:127px; width:100%;}
+.demandas .item .user {margin: 5px 17px 0 13px;}
+.demandas .item .descripcio {display:table; height:1%; margin:0 0 20px 0; float:left; width:500px;}
+.demandas .item .descripcio h1 {font-size:17px; line-height:22px; font-weight:bold; color:#2d2d2d;}
+.demandas .item .descripcio p {font-size:14px; line-height:21px; color:#767676; margin-bottom:10px;letter-spacing: 0.01em;}
+
+
+/* Servicios */
+
+.content .modulo h4{ font-style:normal !important; font-weight:400px !important; font-size:16px !important;}
+.content .ofrecemos p {margin:20px 20px 0 20px; font-size:15px; line-height:21px; color:#2d2d2d} 
+.content .ofrecemos .contacta { background:#fff; float:left; border:1px solid #828282; margin:20px; width:870px;}
+.content .ofrecemos .contacta h2{ margin:20px;color:#069cc8; font-weight:bold; font-size:14px;margin:20px 0 0 20px;}
+.content .ofrecemos .mas-info { width:410px; float:left;margin:10px 0 10px 20px;}
+.content .ofrecemos .mas-info a{ font-weight:bold;}
+.content .ofrecemos .mas-info em{ color:#828282; font-style:normal;}
+.content .ofrecemos .bt-interesa { float:right;margin:0 58px 28px 0; width:260px;text-align:center; border:1px solid #199bc1;background:#19bae9 url(../img/ico-ok.png) 25px center no-repeat;}
+.content .ofrecemos .bt-interesa p{ font-size:15px; line-height:19px; margin:6px 20px 7px 80px}
+.content .ofrecemos .bt-interesa p a{ color:#ffffff; font-weight:600;}
+.content .ofrecemos .bt-interesa p a:hover{ color:#ffffff;}
+
+.contact .bd {background-color: #F1F1F1 !important;float:left;}
+.contact  h1 {color: #069CC8;font-weight: bold; margin-bottom: 30px;}
+
+.content .grid-100 .modulo {margin:0 15px 35px 15px}
+.content .projectes {width:200px; float:left; margin:15px 14px 20px 14px !important; *margin:15px 14px 20px 14px; border:none;}
+.content .descripcio h1 { font-size:14px; margin:0; color:#2c2c2c}
+#clientes .bd .descripcio h2 { font-size:14px; margin:0}
+
+/* Como funciona */
+
+.producto .como-funciona { background: url(../img/bg-como-funciona.png) top left repeat-x; !important;}
+.producto .como-funciona p{ color:#f1f1f1; margin:10px 20px 0 20px; width:75%;}
+.producto .paso-a-paso dl{ float:left; width:128px; margin:0 0 7px 20px;background: url(../img/bg-paso-a-paso.png) top left no-repeat; height:190px; font-size:14px; padding:10px 20px 10px 10px; line-height:19px;}
+.producto .paso-a-paso dl.reducido{height:75px;}
+.producto .paso-a-paso dt{ font-weight:bold; color:#069cc8;}
+.producto .paso-a-paso dt span{ background: url(../img/ico-paso-a-paso.png) top left no-repeat; color:#fff; display:list-item; list-style-type:none; padding:0 8px;}
+.producto .paso-a-paso dd {color:#2d2d2}
+
+.producto .paso-a-paso .dilema {float:left; width:165px; margin-left:20px;}
+.producto .paso-a-paso .dilema dl{ background: url(../img/bg-paso-a-paso-dilema.png) top left no-repeat; height:55px; margin:0;}
+.producto .paso-a-paso .dilema p{float:left; margin:10px;}
+
+.facebook-connect-normal {
+	border:0; 
+	background: url('/media/img/facebook-connect-normal.gif') no-repeat scroll 0 0 transparent; 
+	display: block;
+	color: #FFFFFF; 
+	width : 76px; 
+	height : 19px;
+	font-size: 17px;
+}
+.facebook {
+    background: #5F78AB;
+    border-top: solid 1px #879AC0;
+    border-bottom: solid 1px #1A356E;
+    color: white !important;
+    display: block;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-weight: bold;
+    padding: 2px 6px 3px 6px;
+    margin: 1px 1px 0 21px;
+    text-shadow: none;
+    font-size: 17px;
+}
+.icon-comunitats {
+	display: inline-block;
+	background: transparent url(/media/img/icon-comunitats.gif) no-repeat left top !important;
+	width: 24px !important;
+	height: 19px !important;
+	}
+/* registro
+
+
+.registro #id_gender, .registro #id_city{min-width:222px;}
+.registro .apertura h1 { font-weight:bold; color:#069cc8; margin-bottom:30px;}
+.registro form,
+.registro label,
+.registro input { width:424px; float:left; font-size:15px; line-height:21px;}
+ 
+.registro form { margin:0 22px}
+.registro label { margin:0 0 7px 0}
+.registro input { margin:0 0 20px 0; border:1px solid #4a4a4a; height:30px; color:#666666; text-indent:10px;}
+.registro h3 {font-weight:bold; margin:22px; font-size:15px;}
+
+.registro .cuenta-facebook {float:left; border-left:3px solid #4a4a4a; width:320px; height:200px; margin:30px 0 0 20px;}
+.registro .cuenta-facebook p{margin:0 0 30px 20px; font-size:15px; line-height:22px; color:#2d2d2d}
+
+
+.registro .dia {width: 107px;}
+.registro .mes {width: 163px;margin-left:10px;}
+.registro .any {width: 126px; margin-left:10px;}
+
+.registro .pais,
+.registro .provincia {width:424px}
+*/
+/*.registro .pais,
+.registro .provincia,
+.registro .any,
+.registro .mes,
+.registro .dia {font-size: 14px; height: 30px; padding-top: 3px; margin-bottom:15px; color:#333333}*/
+/*
+.registro select {font-size: 14px; height: 30px; padding-top: 3px; margin-bottom:15px; color:#333333}
+
+.registro .chek-condicones {float:left; width:17px; height:20px; margin-left:0;}
+.registro .condicones-uso {float:left; width:370px; margin-left:10px;}
+
+
+.registro button {background:#16b9e8; float:right; margin:-30px -450px 65px 0; font-size:19px; line-height:30px; color:#FFFFFF; font-weight:bold; padding:15px 70px; cursor:pointer; border:none;}
+.registro button:hover {background:#169be8; text-decoration:underline;}
+.registro .modulo {margin-bottom:30px !important; }
+*/
+/* usuari */
+
+.usuari .modulo {margin:0 15px 30px 15px;}
+.usuari .perfil-usuari h1 {font-size:22px; font-weight:bold; color:#2d2d2d;}
+.usuari .perfil-usuari p {font-size:15px; color:#2d2d2d;}
+
+/* descripcio usuari */
+
+.usuari .perfil-usuari h1 {float:left; margin-bottom:17px;}
+.usuari .perfil-usuari .top-rated {float:left;margin:2px 0 15px 15px;}
+.usuari .perfil-usuari .mas-user {float:right; font-size:14px; margin:-14px -109px 0}
+.usuari .perfil-usuari .ilusiones {float:left; width:75%;}
+
+.usuari .perfil-usuari .donde { margin:15px 0 15px 0; font-size:14px;color:#7b7e81;float:left; width:100%;}
+.usuari .perfil-usuari .twitter { font-weight:normal; font-size:14px;float:left; width:100%;}
+.usuari .perfil-usuari .twitter a{ font-weight:600; margin-left:25px;}
+.usuari .perfil-usuari .web { font-weight:normal; margin-bottom:15px; font-size:14px;float:left; width:100%;}
+.usuari .perfil-usuari .web a{ font-weight:600; margin-left:44px;}
+
+.usuari .perfil-usuari .donde a{color:#7b7e81}
+.usuari .perfil-usuari .twitter a{color:#2d2d2d}
+.usuari .perfil-usuari .web a{color:#2d2d2d}
+
+.usuari .perfil-usuari .donde a:hover,
+.usuari .perfil-usuari .twitter a:hover,
+.usuari .perfil-usuari .web a:hover {color:#069cc8}
+
+.usuari .perfil-usuari .seguir {float:left; width:100%;}
+
+/* mi cuenta */
+
+
+.cuenta h1 { font-size:22px; font-weight:bold; color:#2d2d2d}
+.cuenta .modulo .item{ width:630px;}
+
+.computo .bd,
+.computo .ft{ width:630px;}
+
+.computo dl {margin:20px; background:gold; line-height:21px; font-size:15px;}
+.computo dt { width:77%; float:left; margin:0 0 12px 0; padding-right:10px}
+.computo dd { width:20%; float:left; text-align:right; margin:0 0 10px 0; font-weight:bold;}
+.computo dd em{color:#059cc8; font-style:normal;}
+.computo hr {margin: 20px 0 0 20px !important; width: 590px !important;}
+
+.computo .saldo dt {background: url(../img/bg-computo.png) top left repeat-x; float:left; height:36px; padding:7px 0 0 10px; width:76%}
+.computo .saldo dd {background: url(../img/bg-computo.png) top left repeat-x; float:left; height:36px; padding:7px 10px 0 0; width:20.5%;}
+
+.computo .ft{background: url(../img/bg-modulo-footer.png) repeat-x scroll left bottom transparent !important;}
+
+
+
+/*  editar usuari */
+
+.editar-usuari .apertura { width:920px; padding-bottom:25px; margin-bottom:20px} 
+.editar-usuari .apertura h1 { font-weight:bold; color:#2d2d2d; width:70%; float:left; font-size:22px;}
+.editar-usuari h3 { font-weight:bold; color:#2d2d2d; font-size:15px; line-height:18px; margin:0 0 20px 0}
+.editar-usuari .modulo hr { height:1px; color:#d5d5d5; background:#d5d5d5; width:100%; margin:0 0 20px 0;}
+
+
+.avatar-user {margin:-37px 0 20px 220px; width: 424px; overflow:hidden;}
+.avatar-user dt{ font-size:15px; line-height:18px; font-weight:600px; margin-bottom:10px;}
+.avatar-user dd{float:left; margin-right:15px; font-size:12px; line-height:15px;}
+.avatar-user img{border:3px solid #828282}
+.editar-usuari .ejemplo {float:right; margin: 0 -230px 0 0; width: 240px; font-size:14px; line-height:19px; color:#2d2d2d}
+.editar-usuari .modulo .ft hr { margin:0 0 10px 0;}
+
+
+/* detalle de usuario */
+
+.usuari .detall-coneixement {float:right;}
+.usuari .detall-coneixement .bd{ border-bottom:none;}
+.usuari .seguidores {margin-bottom:10px;}
+.usuari .bd hr {background-color:#d5d5d5; height:1px; width:100%; margin:20px 0 0 0;}
+.usuari .hd hr,
+.usuari .ft hr { width:100%; *width:100%; margin:0 0 0 0; height:3px; background-color:#4A4A4A; border:none;}
+
+/* perfil */
+
+.perfil {background-color:#f1f1f1; float:right; width:239px; margin-top:10px !important;}
+.perfil .hd { font-size:15px; margin:10px 0 0 15px;}
+.perfil em { font-size:14px; color:#FF0000; font-style:normal;}
+
+.perfil .progress-bar {background:#fff; border:1px solid #999999; width:86%; height:15px; margin:12px 15px}
+.perfil .progress-bar span{ background:#2b9cbd; display:block;}
+
+.perfil .ft {background: url(../img/bg-modulo-footer.png) bottom left repeat-x;}
+.perfil .completa-perfil { font-size:13px; margin:0 15px 10px 15px; text-indent:12px;background: url(../img/ico-tancat-blau.png) 0 3px no-repeat;}
+
+.perfil .detalle-perfil {display:none; margin:0px 15px 15px 15px;}
+.perfil .detalle-perfil li{font-size:13px; line-height:18px;}
+.perfil .detalle-perfil li span{color:#7b7e81}
+.perfil .detalle-perfil li.on img{float: left; margin-top: -20px;}
+
+/* Favoritos */
+.favoritos .apertura h2 {font-size:22px; color:#2d2d2d; font-weight:bold;}
+.favoritos .item { display:block;padding-top:13px;border:none; float:left; min-height:127px; width:100%;}
+.favoritos .item .user {margin: 5px 17px 0 13px;}
+.favoritos .item .descripcio {display:table; height:1%; margin:0 0 20px 0; float:left; width:500px;}
+.favoritos .item .descripcio h1 {font-size:17px; line-height:22px; font-weight:bold; color:#2d2d2d;}
+.favoritos .item .descripcio p {font-size:14px; line-height:21px; color:#767676; margin-bottom:10px;letter-spacing: 0.01em;}
+
+.favoritos .apertura { width:920px; margin-bottom:20px} 
+.favoritos .apertura h1 { font-weight:bold; color:#2d2d2d; width:70%; float:left; font-size:22px;}
+.favoritos h3 { font-weight:bold; color:#2d2d2d; font-size:15px; line-height:18px; margin:0 0 10px 15px}
+.favoritos .hd-section {  float:left;}
+.favoritos .hd-section hr { height:1px; color:#d5d5d5; background:#d5d5d5; width:920px; margin:0 15px 20px 15px;}
+
+
+/* Paginació */
+
+.page-nav {float:right; margin:8px 15px 30px 0; font-size:14px;}
+.page-nav li{float:left; padding:5px 10px; background:#dedede; margin-left:5px;}
+.page-nav li a{color:#2d2d2d !important;}
+.page-nav li.active {background: url(../img/bg-pag-nav-active.png) top left repeat-x;}
+.page-nav li.active a{color:#FFFFFF !important;}
+
+/* lightbox */
+
+/* use a semi-transparent image for the overlay */
+	#overlay {
+		color:#828282;
+		height:500px;
+		width:472px;
+		margin:0;
+		padding:0;
+		display:none;
+	}
+	
+	/* container for external content. uses vertical scrollbar, if needed */
+	.contentWrap {
+		height:440px;
+		overflow-y:auto;
+		background:#f1f1f1;
+	}
+	
+	.contentWrap .modulo{margin:35px 35px 10px 35px;}
+	.contentWrap h3{Font-size:15px; color:#2d2d2d; font-weight:bold; margin:0 20px 30px 0;float:left;}
+	.contentWrap label{ width:95%;font-size:15px; color:#2d2d2d; margin-bottom:12px; float:left;}
+	.contentWrap input{ width:97%;font-size:14px; color:#828282; border:1px solid #4a4a4a;height:28px; padding-left:5px;float:left;margin-bottom:20px;}
+	
+	.contentWrap input.chek-recordar { width:12px; height:14px; margin:3px 5px 21px 0;}
+	.contentWrap .recordar {float:left; color:#2e2d2d; font-size:15px; width:93%; margin:2px 0 0 0;}
+	.contentWrap .no-recordar {font-size:11px; width:100%; margin:2px 0 0 0;float:left;}
+	.contentWrap .no-recordar a{color:#069cc8}
+	.contentWrap button.enviar {
+		text-align:center;
+		background:#069cc8;
+		float:right;
+		width:200px;
+		height:31px;
+		color:#fff;
+		font-weight:bold;
+		font-size:16px;
+		line-height:31px;
+		cursor:pointer;
+		border:1px solid #18add8;
+		margin:-10px 7px 0 0;
+		padding-bottom:4px;
+		}
+		
+	.contentWrap button.enviar:hover {background-color:#1290b4; text-decoration:underline}	
+	.contentWrap .ft hr {margin:30px 9px 20px 0; background-color:#4a4a4a; border:none; height:1px;}
+	.contentWrap .ft p {color:#2d2d2d; font-size:14px; line-height:20px; width:75%;}
+	.contentWrap .ft p a{color:#069cc8}
+	
+	
+	/*tancar finestra */
+	
+	
+	.contentWrap a.close{
+    background: url("../img/bt-close.png") center no-repeat;
+    cursor: pointer;
+    height: 35px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 35px;
+	z-index:1000;
+}
+
+/* autocomplete */
+
+
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #eee;
+}
+
+.ac_over {
+	background-color: #0A246A;
+	color: white
+}
+
+
+/* detalle de proyecto */
+
+.seguidores {float:right; background:#f1f1f1 url(../img/bg-seguidores.png) center no-repeat; margin-top:5px; width:232px;}
+.seguidores dl{float:right; width:116px; display:block;text-align:center;}
+.seguidores dt{font-size:21px; line-height:26px; color:#2d2d2d;  display:block; width:100%; margin:8px 0 0 0;}
+.seguidores dd{font-size:13px; line-height:15px; width:100%; margin:0 0 15px 0;}
+.seguir-proyecto {float:right; width:232px; margin:3px 0 30px 0;}
+.seguir-proyecto span{text-align:right; font-size:13px; width:232px; float:right;}
+
+.bd .new{background-color:#FFF594!important;}
+/* buscador usuarios seguidores */
+	
+.seguidores_cerca {float:right; background-color:lightGrey !important; margin-top:5px; width:232px;padding-top:5px}
+.seguidores_cerca dl{float:right; width:116px; display:block;text-align:center;}
+.seguidores_cerca dt{font-size:15px; line-height:15px; color:white;  display:block; width:100%; margin:8px 0 5 0;}
+.seguidores_cerca dd{font-size:13px; line-height:15px; width:100%; margin:0 0 15px 0;}
+.seguidores_cerca  .borde{background:url("../img/filete-nav-section.png") no-repeat scroll right center transparent}
+.seguir-proyecto {float:right; width:232px; margin:3px 0 30px 0;}
+.seguir-proyecto span{text-align:right; font-size:13px; width:232px; float:right;}
+
+/* necesidades */
+
+.necesidades {float:left; border-top: 1px solid #D5D5D5;}
+.necesidades .item{ border:none; margin-bottom:10px;}
+.necesidades .par{ background:#f1f1f1;}
+.necesidades .item .avatar,
+.necesidades .item .descripcio{margin-left:10px;}
+.necesidades .item .data {color:#7b7e81; font-size:13px; margin-top:7px;}
+
+/* peticio */
+
+.necesidades .item {cursor:pointer;}
+.necesidades .item .peticio { float: right; margin:15px 15px 0 30px; display:none;}
+.necesidades .item .peticio .bt-pedir{ width:160px; margin:0; height:31px; font-weight:600; font-size:15px; letter-spacing:0.03em}
+.necesidades .item .peticio .bt-pedir a {display: block; padding:5px 20px;}
+
+.necesidades .item .peticio .ignorar{ width:100%; text-align:center; margin-top:5px; font-size:13px;}
+.necesidades .hover{ display:block !important;} 
+
+/* tiempo estimado */
+
+.tiempo-estimado {font-size:13px; color:#7b7e81; margin:-7px 0 3px 0;}
+.tiempo-estimado em{color:#c3004a; margin-left:5px; font-style:normal;}
+
+
+/* mis conocimientos */
+
+.mis-conocimientos .grid-75 hr { height:1px; background:#d5d5d5;}
+.mis-conocimientos .apertura { margin: 0 75px 20px 15px;}
+.mis-conocimientos .apertura h2 {font-size:22px; color:#2d2d2d; font-weight:bold;}
+.mis-conocimientos .item { display:block;padding-top:13px;border:none; float:left; min-height:127px; width:100%;}
+.mis-conocimientos .item .user {margin: 5px 17px 0 13px;}
+.mis-conocimientos .item .descripcio {display:table; height:1%; margin:0 0 20px 15px; float:left; width:500px;}
+.mis-conocimientos .item .descripcio h1 {font-size:17px; line-height:22px; font-weight:bold; color:#2d2d2d;}
+.mis-conocimientos .item .descripcio p {font-size:14px; line-height:21px; color:#767676; margin-bottom:10px;letter-spacing: 0.01em;}
+
+.mis-conocimientos .num-ofertas p{width:500px; float:left;margin:-7px 0 5px 0; font-weight:bold; color:#2d2d2d; font-size:17px; }
+
+.mis-conocimientos  .peticion { margin-top:-55px; float:right;}
+.mis-conocimientos  .bt-pedir { margin:15px 20px; width:220px;}
+
+/* editar proyectos */
+
+.editar-usuari .item { display:block;padding-top:13px;border:none; float:left; min-height:127px; width:650px;}
+.editar-usuari .item .user {margin: 5px 17px 0 13px;}
+.editar-usuari .item .descripcio {display:table; height:1%; margin:0 0 20px 15px; float:left; width:500px;}
+.editar-usuari .item .descripcio h1 {font-size:17px; line-height:22px; font-weight:bold; color:#2d2d2d;}
+.editar-usuari .item .descripcio h4 {font-size:14px; line-height:22px; font-weight:600; color:#2d2d2d;}
+.editar-usuari .item .descripcio p {font-size:14px; line-height:21px; color:#767676; margin-bottom:10px;letter-spacing: 0.01em;}
+
+.add-necesidad { display:block;padding-top:13px;border:none; float:left; height:65px; width:635px;padding-left:15px!important;}
+.add-necesidad .bt-modificar {float:left !important; }
+
+/* tokens */
+
+.no-margin {margin-left:0 !important;}
+.no-border {border:none !important;}
+.no-show {display:none !important;  border:1px solid lime;}
+.opacitat {opacity:0.5;filter:alpha(opacity=50);}
+.info {background: url(../img/ico-info.png) 0 1px no-repeat; text-indent:23px;}
+.to-left { float:left !important;}
+.to-right { float:right !important;}
+.gris { background:#f1f1f1!important}
+
+
+/*buyKnowledge */
+
+#buyKnowledge {
+        color:#828282;
+        height:300px;
+        width:672px;
+        margin:0;
+        padding:0;
+        display:none;
+    }
+    #buyKnowledge textarea {
+        width:90%;
+    }
+    
+	#buyKnowledge .contentWrap {
+    height: 330px;
+    padding: 20px;
+	}
+
+    .order_frame button:hover {background:#169be8; text-decoration:underline;}
+    .order_frame button {background:#16b9e8; float:right; margin-top:10px; font-size:19px; line-height:30px; color:#FFFFFF; font-weight:bold; padding:15px 70px; cursor:pointer; border:none;}
+
+.c1{clear:both}
+.show {display:block !important; border:1px solid red;}
+.no-background { background:none !important;}
+.sub-cat { margin-left:20px !important}
+
+#offerKnowledge {
+        color:#828282;
+        height:auto;
+        width:672px;
+        margin:0;
+        padding:0;
+        display:none;
+        scroll : auto;
+    }
+    #offerKnowledge .contentWrap {
+        padding:20px;
+        height:570px;
+        top : 45px !important;
+    }
+
+#popSmall {
+        color:#828282;
+        height:auto;
+        margin:0;
+        padding:0;
+        display:none;
+    }
+    #popSmall .contentWrap {
+        padding:20px;
+        height:auto;
+        width:841px;
+    }
+#donation {
+        color:#828282;
+        height:auto;
+        margin:0;
+        padding:0;
+        display:none;
+    }
+    #donation .contentWrap {
+        padding:20px;
+        height:auto;
+        width:300px;
+    }
+/* editar contingut */
+
+.editar {font-size:12px !important;background: url(../img/ico-editar.png) 0 center no-repeat; padding-left:20px; font-weight:normal;}
+.editar a{color:#069cc8 !important;}
+.eliminar {background: url(../img/ico-eliminar.png) 0 1px no-repeat; padding-left:18px; font-size:12px !important; font-weight:normal;}
+.eliminar a{color:#069cc8 !important;}
+
+/* mi cuenta */
+
+.cuenta h1 { font-size:22px; font-weight:bold; color:#2d2d2d}
+.cuenta .modulo .hd,
+.cuenta .modulo .bd,
+.cuenta .modulo .ft{ width:630px;}
+
+.computo .bd,
+.computo .ft{ width:630px;}
+
+.computo dl {margin:20px; background:gold; line-height:21px; font-size:15px;}
+.computo dt { width:77%; float:left; margin:0 0 12px 0; padding-right:10px}
+.computo dd { width:20%; float:left; text-align:right; margin:0 0 10px 0; font-weight:bold;}
+.computo dd em{color:#059cc8; font-style:normal;}
+.computo hr {margin: 20px 0 0 20px !important; width: 590px !important;}
+
+.computo .saldo dt {background: url(../img/bg-computo.png) top left repeat-x; float:left; height:36px; padding:7px 0 0 10px; width:76%}
+.computo .saldo dd {background: url(../img/bg-computo.png) top left repeat-x; float:left; height:36px; padding:7px 10px 0 0; width:20.5%;}
+
+.computo .ft{background: url(../img/bg-modulo-footer.png) repeat-x scroll left bottom transparent !important;}
+
+/* mi cuenta - movimientos */
+
+.movimientos {float:left; border-top: 1px solid #D5D5D5;}
+.movimientos .nav-filtros{ margin:0 0 20px 0;}
+.movimientos table{width:880px; margin:20px 20px 0 20px; text-align:left; color:#2d2d2d;}
+.movimientos table th{border:0; border-bottom:1px solid #cacaca; padding-bottom:20px; font-weight:bold; font-size:14px; line-height:21px;}
+
+.movimientos table td{font-size:13px; line-height:13px; padding:15px 0 3px 0; font-weight:600;}
+.movimientos table .fecha{color:#7b7e81; width:180px;}
+.movimientos table .ayuda{color:#2d2d2d; width:110px;}
+.movimientos table .concepto{color:#2d2d2d; width:435px;}
+
+.movimientos .ft{background: url(../img/bg-modulo-footer.png) repeat-x scroll left bottom transparent !important; margin-bottom:60px; padding-top:10px;}
+
+/* cuenta > aceptado **/
+
+.aceptado h3{color:#2d2d2d !important;font-size:19px !important; line-height:21px !important; font-weight:bold; padding-right:30px;margin:20px 0 0 15px !important; padding:20px 0 10px 0;}
+.aceptado h3 span{ overflow:hidden;background: url(../img/ico-aceptado.png) top right no-repeat; padding-left:24px; pading-top:19px; margin:3px 0 0 15px; vertical-align:middle;}
+
+.aceptado .ft,
+.aceptado .hd,
+.aceptado .bd,
+.aceptado .item {width:630px !important; height:auto !important}
+.aceptado .par{ background:#f1f1f1;}
+.aceptado .item .avatar {margin:5px 0 0 15px !important;}
+.aceptado .item .descripcio{margin:0 0 0 15px !important;}
+.aceptado .item .descripcio p{margin:0 !important;}
+.aceptado .item .data {color:#7b7e81; font-size:13px; margin-top:7px;}
+.aceptado .ft{background: url(../img/bg-modulo-footer.png) repeat-x scroll left bottom transparent !important;margin-bottom:30px; height:28px;}
+
+/* ahora que */
+
+.ahora-que {margin:0 15px 30px 15px; font-size:14px; line-height:16px;float:left; width:500px;}
+.ahora-que dt{ font-weight:bold; font-size:15px; margin-bottom:25px;}
+.ahora-que dd{ margin:10px 0 0 0; padding-left:20px; background: url(../img/ico-punt.png) 0 8px no-repeat;}
+
+.desc-projecte h3, .demandas h3, .necesidades h3, .movimientos h3 {
+    color: #333333;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 10px 0 14px;
+}
+
+#rate a {
+    background: url("/media/img/rate_good.gif") no-repeat scroll center center transparent;
+    border: 1px solid #FFFFFF;
+    float: left;
+    height: 20px;
+    margin-right: 10px;
+    padding: 1px;
+    text-indent: -9999px;
+    width: 24px;
+}
+#rate a.bad {
+    background-image: url("/media/img/rate_bad.gif");
+}
+#rate a.selected { border-color:#0b1338; }
+/*#form select {
+    position: absolute;
+    top: -9999px;
+}
+*/
+#form #time,#formAccept input{width:30px}
+.editar-usuari .upload-foto{margin:10px 0 0 0 !important; float:left;}
+.editar-usuari .upload-foto input{ border:1px solid #343434 !important; text-indent:0 !important;}
+
+.messages {
+	padding : 10px 10px 10px 10px;
+	font-size : 14px;
+	text-align : center;
+	width : 97%;
+	left : 35%;
+	}
+.messages li {
+	padding : 10px;
+	-moz-border-radius:5px; -webkit-border-radius:5px; -khtml-border-radius:5px; border-radius:5px;
+	text-align : center;
+	margin-bottom : 5px;
+}
+
+.messages .success {
+    background-color: #FFF594;
+    border-color: #F6D123;
+    border-style: solid;
+    border-width: 1px 0;
+    clear: both;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.messages .error {
+ 	border : 1px solid rgb(255,0,0);
+	background-color : rgba(255,0,0,.6);
+ 	width : 60%;
+    clear: both;
+    font-size: 16px;
+    margin : 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+.messages .info {
+	width : 450px;
+	border : 1px solid rgb(250,226,174);
+	background-color : rgba(250,226,174,.6);	
+}
+
+
+.editar-usuari .bt-modificar {width:auto;}	
+.editar-usuari .butons button:hover {background:#ccc url(../img/bg-bt-modificar-on.png) center 0 repeat-x;}
+.bt-modificar a{color:#2d2d2d !important; display:block;} 
+.editar-usuari .butons {width:135px; margin-top:5px; float:left; text-align:right}
+.editar-usuari button {background:#16b9e8; float:right; margin: 30px 22px 10px 0; padding: 10px 20px; font-size:19px; line-height:30px; color:#FFFFFF; font-weight:bold; cursor:pointer; border:none;}
+.editar-usuari button:hover {background:#169be8; text-decoration:underline;}
+.editar-usuari .bt-modificar,
+.editar-usuari .butons button {
+	background:#ccc url(../img/bg-bt-modificar.png) center 0 repeat-x !important; 
+	margin:0 0 12px 0 !important;
+	padding:0 10px !important;
+	border:1px solid #a2a5a7!important;
+	font-weight:normal!important;
+	font-size:15px !important;
+	line-height:1px !important;
+	height:26px!important;
+	color:#2d2d2d !important;
+	float:right;
+	width:110px;
+	}

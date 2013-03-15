@@ -1,0 +1,25 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+
+AddDefaultCharset UTF-8
+
+php_value error_reporting 2
+php_flag display_errors On
+
+<IfModule mod_rewrite.c>
+# Activar RewriteEngine
+RewriteEngine on
+RewriteBase /
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+ 
+RewriteRule ^(.*)$ $1.php
+</IfModule>
+
+
+
+ErrorDocument 400 http://estutiempo2.uni.me/error.html 
+ErrorDocument 401 http://estutiempo2.uni.me/error.html 
+ErrorDocument 403 http://estutiempo2.uni.me/error.html 
+ErrorDocument 404 http://estutiempo2.uni.me/error.html 
+ErrorDocument 500 http://estutiempo2.uni.me/error.html 
